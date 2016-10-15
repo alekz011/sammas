@@ -1,0 +1,98 @@
+html{
+	margin: 0px;
+	padding:0px;
+	font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+@media all and (max-device-width: 720px){
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    h1 {
+        font-size: 16px;
+    }
+}
+@media all and (max-width:450px){
+	h1{
+		font-size:12px;
+	}
+}
+@media all and (max-device-width: 320px){
+    h1 {
+        font-size: 12px;
+    }
+}
+
+body{
+  /* Location of the image */
+  background-image: url('../img/bg.jpg');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
+
+#mainframe{
+  	height: 100%;
+	background-color: white;
+	opacity: 0.9;
+	position: relative;
+	z-index: 1;
+	min-height: 100%;
+	display: block;
+}
+#header{
+	z-index: 10;
+	height: 60px;
+	text-align: center;
+}
+#navigation{
+	top:10px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+}
+#mid-container{
+	top:30px;
+	height: 425px;
+	z-index: 10;
+}
+#cObjective,#address{
+	display: inline-block;
+	text-align: center;
+	z-index: 10;
+}
+#myImg,#cObjective{
+	padding:25px;
+	z-index: 1000px;
+}
+#myImg{
+	max-width: 100%;
+	height: auto;
+}
+#map{
+	display: inline-block;
+	z-index: 10;
+}
